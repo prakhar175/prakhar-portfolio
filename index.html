@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Prakhar Kothari - AI/ML Engineer specializing in NLP, Computer Vision, and LLM Fine-tuning">
+    <meta name="keywords" content="AI, Machine Learning, NLP, Computer Vision, RAG, LLM, Portfolio">
+    <meta name="author" content="Prakhar Kothari">
+    <title>Prakhar Kothari // CYBERPUNK_2077</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Holographic Overlay -->
+    <div class="holographic-overlay"></div>
+
+    <!-- Grid Lines -->
+    <div class="grid-lines horizontal"></div>
+    <div class="grid-lines vertical"></div>
+
+    <!-- Scanline Effect -->
+    <div class="scanline"></div>
+
+    <!-- Cursor Trail -->
+    <canvas id="cursor-trail"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-wrapper">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text glitch" data-text="PK">PK</span>
+                    <span class="logo-bracket">/&gt;</span>
+                    <div class="logo-glow"></div>
+                </div>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link" data-text="HOME"><span class="link-number">01.</span> HOME</a></li>
+                <li><a href="#about" class="nav-link" data-text="ABOUT"><span class="link-number">02.</span> ABOUT</a>
+                </li>
+                <li><a href="#experience" class="nav-link" data-text="EXPERIENCE"><span class="link-number">03.</span>
+                        EXPERIENCE</a></li>
+                <li><a href="#projects" class="nav-link" data-text="PROJECTS"><span class="link-number">04.</span>
+                        PROJECTS</a></li>
+                <li><a href="#skills" class="nav-link" data-text="SKILLS"><span class="link-number">05.</span>
+                        SKILLS</a></li>
+                <li><a href="#achievements" class="nav-link" data-text="ACHIEVEMENTS"><span
+                            class="link-number">06.</span> ACHIEVEMENTS</a></li>
+                <li><a href="#contact" class="nav-link" data-text="CONTACT"><span class="link-number">07.</span>
+                        CONTACT</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <div class="button-glow"></div>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <!-- System Status -->
+                    <div class="system-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">SYSTEM_ONLINE</span>
+                        <span class="status-time" id="current-time"></span>
+                    </div>
+
+                    <!-- Main Terminal -->
+                    <div class="terminal-window holographic">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control-dot red"></span>
+                                <span class="control-dot yellow"></span>
+                                <span class="control-dot green"></span>
+                            </div>
+                            <span class="terminal-title">NEURAL_INTERFACE.exe</span>
+                            <div class="terminal-signal">
+                                <span class="signal-bar"></span>
+                                <span class="signal-bar"></span>
+                                <span class="signal-bar"></span>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="terminal-line">
+                                <span class="prompt">root@cyberspace</span>
+                                <span class="path">~</span>
+                                <span class="command">$ whoami</span>
+                            </p>
+                            <p class="terminal-output neon-text">
+                                <span class="output-bracket">{'{'}</span>
+                                <span class="output-key">"name"</span>:
+                                <span class="output-value">"Prakhar Kothari"</span>,
+                                <span class="output-bracket">{'}'}</span>
+                            </p>
+                            <p class="terminal-line">
+                                <span class="prompt">root@cyberspace</span>
+                                <span class="path">~</span>
+                                <span class="command">$ cat role.txt</span>
+                            </p>
+                            <div class="typing-container">
+                                <span class="typing-text neon-text"></span>
+                                <span class="cursor-glow">█</span>
+                            </div>
+                            <p class="terminal-line">
+                                <span class="prompt">root@cyberspace</span>
+                                <span class="path">~</span>
+                                <span class="command">$ echo $EXPERTISE</span>
+                            </p>
+                            <p class="terminal-output">
+                                <span class="tech-badge">AI Research</span>
+                                <span class="tech-badge">NLP</span>
+                                <span class="tech-badge">Fine-tuning</span>
+                                <span class="tech-badge">Computer Vision</span>
+                            </p>
+                        </div>
+                        <div class="terminal-glow"></div>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card holographic">
+                            <div class="stat-icon"><i class="fas fa-code"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-number" data-target="20+">0</span><span>+</span>
+                                <span class="stat-label">PROJECTS</span>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        
+
+                        <div class="stat-card holographic">
+                            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-number" data-target="5">0</span><span>+</span>
+                                <span class="stat-label">HACKATHON WINS</span>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        <div class="stat-card holographic">
+                            <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-number" data-target="2">0</span>
+                                <span class="stat-prog">(in progress)</span>
+                                <span class="stat-label">Research Papers</span>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#contact" class="cyber-button primary">
+                            <span class="button-content">
+                                <i class="fas fa-plug"></i>
+                                CONNECT
+                            </span>
+                            <div class="button-corners">
+                                <span class="corner tl"></span>
+                                <span class="corner tr"></span>
+                                <span class="corner bl"></span>
+                                <span class="corner br"></span>
+                            </div>
+                            <div class="button-glow"></div>
+                        </a>
+                        <a href="../Prakhar_resume.pdf" download class="cyber-button secondary">
+                            <span class="button-content">
+                                <i class="fas fa-download"></i>
+                                DOWNLOAD.CV
+                            </span>
+                            <div class="button-corners">
+                                <span class="corner tl"></span>
+                                <span class="corner tr"></span>
+                                <span class="corner bl"></span>
+                                <span class="corner br"></span>
+                            </div>
+                            <div class="button-glow"></div>
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-grid">
+                        <a href="https://github.com/prakhar175" target="_blank" class="social-link"
+                            data-tooltip="GITHUB">
+                            <i class="fab fa-github"></i>
+                            <div class="link-glow"></div>
+                        </a>
+                        <a href="https://linkedin.com/in/prakharkothari175" target="_blank" class="social-link"
+                            data-tooltip="LINKEDIN">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="link-glow"></div>
+                        </a>
+                        <a href="https://twitter.com/prakharkothari7" target="_blank" class="social-link"
+                            data-tooltip="TWITTER">
+                            <i class="fab fa-twitter"></i>
+                            <div class="link-glow"></div>
+                        </a>
+                        <a href="mailto:prakhar.k2004@gmail.com" class="social-link" data-tooltip="EMAIL">
+                            <i class="fas fa-envelope"></i>
+                            <div class="link-glow"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image with 3D Effect -->
+                <div class="hero-image">
+                    <div class="image-frame-3d">
+                        <!-- Floating Particles around image -->
+                        <div class="floating-particles">
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                        </div>
+
+                        <!-- Corner Brackets -->
+                        <div class="corner-bracket tl"></div>
+                        <div class="corner-bracket tr"></div>
+                        <div class="corner-bracket bl"></div>
+                        <div class="corner-bracket br"></div>
+
+                        <!-- Image Container -->
+                        <div class="image-container holographic">
+                            <img src="image.jpg" alt="Prakhar Kothari" class="profile-image">
+                            <div class="scan-effect"></div>
+                            <div class="holographic-border"></div>
+                        </div>
+
+                        <!-- Status Overlay -->
+                        <div class="image-status">
+                            <div class="status-bar">
+                                <span class="bar-label">NEURAL_LINK</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <span class="bar-value">100%</span>
+                            </div>
+                            <div class="status-indicators">
+                                <span class="indicator active">AI</span>
+                                <span class="indicator active">ML</span>
+                                <span class="indicator active">NLP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+            <i class="fas fa-chevron-down scroll-icon"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="ABOUT_PROFILE.exe">
+                <span class="title-number">[02]</span>
+                ABOUT_PROFILE<span class="title-ext">.exe</span>
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="about-grid">
+                <div class="about-main cyber-panel holographic">
+                    <div class="panel-header">
+                        <span class="panel-icon">▸</span>
+                        <span class="panel-title">BIO.md</span>
+                        <div class="panel-status">
+                            <span class="status-dot active"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <h3 class="neon-text">AI/ML Engineer & Researcher</h3>
+                        <p>
+                            Currently pursuing <span class="highlight">B.Tech in Computer Science</span> at the
+                            <span class="highlight">Indian Institute of Information Technology, Nagpur</span>,
+                            specializing in Artificial Intelligence and Machine Learning with a CGPA of 8.31/10.
+                        </p>
+                        <p>
+                            My expertise lies at the intersection of <span class="highlight">applied AI and
+                                research</span>,
+                            with a focus on Natural Language Processing, Computer Vision, and Large Language Models.
+                            I'm particularly passionate about <span class="highlight">Retrieval-Augmented Generation
+                                (RAG)</span>
+                            systems, LLM fine-tuning, and building intelligent applications.
+                        </p>
+                        <p>
+                            Currently working as a <span class="highlight neon-text">Generative AI Intern at
+                                Tecnod8.ai</span>,
+                            where I've engineered custom RAG pipelines achieving <span class="metric-highlight">95%
+                                improvement</span>
+                            in information retrieval accuracy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature-card cyber-panel holographic">
+                        <div class="feature-icon neon-text">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Research Focus</h4>
+                        <p>NLP • RAG Systems • LLM Fine-tuning • Computer Vision</p>
+                        <div class="feature-glow"></div>
+                    </div>
+
+                    <div class="feature-card cyber-panel holographic">
+                        <div class="feature-icon neon-text">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Tech Arsenal</h4>
+                        <p>PyTorch • TensorFlow • LangChain • Transformers</p>
+                        <div class="feature-glow"></div>
+                    </div>
+
+                    <div class="feature-card cyber-panel holographic">
+                        <div class="feature-icon neon-text">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Recognition</h4>
+                        <p>Winner IIT Roorkee • 2nd NPCI • 3rd IIM Indore</p>
+                        <div class="feature-glow"></div>
+                    </div>
+
+                    <div class="feature-card cyber-panel holographic">
+                        <div class="feature-icon neon-text">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Current Mission</h4>
+                        <p>GenAI Intern @ Tecnod8.ai Building RAG Pipelines</p>
+                        <div class="feature-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="WORK_HISTORY.log">
+                <span class="title-number">[03]</span>
+                WORK_HISTORY<span class="title-ext">.log</span>
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item cyber-panel holographic">
+                    <div class="timeline-marker">
+                        <div class="marker-core"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-date">OCT_2025 → PRESENT</div>
+                    <div class="timeline-content">
+                        <h3 class="neon-text">Generative AI Intern</h3>
+                        <h4>Tecnod8.ai <span class="remote-tag">// REMOTE</span></h4>
+                        <ul class="achievement-list">
+                            <li>
+                                <span class="bullet">▸</span>
+                                Engineered custom <span class="highlight">RAG pipeline</span> achieving
+                                <span class="metric-highlight">0.40 → 0.78 NDCG</span> improvement (95% boost)
+                            </li>
+                            <li>
+                                <span class="bullet">▸</span>
+                                Fine-tuned <span class="highlight">transformer-based embeddings</span>
+                                for semantic similarity optimization across domain-specific datasets
+                            </li>
+                            <li>
+                                <span class="bullet">▸</span>
+                                Optimized <span class="highlight">GPU utilization on Azure VMs</span>
+                                with parallel processing and mixed-precision training
+                            </li>
+                        </ul>
+                        <div class="tech-grid">
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Embeddings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="PROJECTS.db">
+                <span class="title-number">[04]</span>
+                PROJECTS<span class="title-ext">.db</span>
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="projects-grid scroll-animate">
+                <!-- Project 1 -->
+                <div class="project-card cyber-panel holographic tilt-3d">
+                    <div class="project-number">01</div>
+                    <div class="project-icon neon-text">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Engage-GPT</h3>
+                    <p>
+                        Fine-tuned <span class="highlight">Mistral-7B</span> using QLoRA on 1,000+ YouTube pairs.
+                        Achieved <span class="metric-highlight">70% loss reduction</span> training only 0.79%
+                        parameters.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">70%</span>
+                            <span class="metric-label">Loss Reduction</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">0.79%</span>
+                            <span class="metric-label">Params Trained</span>
+                        </div>
+                    </div>
+                    <div class="tech-grid">
+                        <span class="tech-tag">Mistral-7B</span>
+                        <span class="tech-tag">QLoRA</span>
+                        <span class="tech-tag">GPTQ</span>
+                        <span class="tech-tag">PyTorch</span>
+                    </div>
+                    <a href="https://github.com/prakhar175" target="_blank" class="project-link">
+                        <span>VIEW_PROJECT</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card cyber-panel holographic tilt-3d">
+                    <div class="project-number">02</div>
+                    <div class="project-icon neon-text">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Intelligent Research Aggregator</h3>
+                    <p>
+                        Multi-source platform using <span class="highlight">LangGraph</span> for parallel aggregation.
+                        <span class="metric-highlight">70% time saved</span> through AI synthesis.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">70%</span>
+                            <span class="metric-label">Time Saved</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">3</span>
+                            <span class="metric-label">Data Sources</span>
+                        </div>
+                    </div>
+                    <div class="tech-grid">
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">APIs</span>
+                    </div>
+                    <a href="https://github.com/prakhar175" target="_blank" class="project-link">
+                        <span>VIEW_PROJECT</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card cyber-panel holographic tilt-3d">
+                    <div class="project-number">03</div>
+                    <div class="project-icon neon-text">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>upcharAI</h3>
+                    <p>
+                        Healthcare platform with <span class="highlight">MobileNet</span> disease prediction.
+                        <span class="metric-highlight">90.24% accuracy</span> with RAG medical assistant.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">90.24%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">30</span>
+                            <span class="metric-label">Diseases</span>
+                        </div>
+                    </div>
+                    <div class="tech-grid">
+                        <span class="tech-tag">MERN</span>
+                        <span class="tech-tag">MobileNet</span>
+                        <span class="tech-tag">LLaMA</span>
+                        <span class="tech-tag">Neo4j</span>
+                    </div>
+                    <a href="https://github.com/prakhar175" target="_blank" class="project-link">
+                        <span>VIEW_PROJECT</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- More projects... -->
+                <div class="project-card cyber-panel holographic tilt-3d">
+                    <div class="project-number">04</div>
+                    <div class="project-icon neon-text">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Multimodal RAG</h3>
+                    <p>
+                        Advanced PDF processing with text and image analysis using
+                        <span class="highlight">multimodal embeddings</span>.
+                    </p>
+                    <div class="tech-grid">
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Multimodal</span>
+                        <span class="tech-tag">Vector DB</span>
+                    </div>
+                    <a href="https://github.com/prakhar175" target="_blank" class="project-link">
+                        <span>VIEW_PROJECT</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="project-card cyber-panel holographic tilt-3d">
+                    <div class="project-number">05</div>
+                    <div class="project-icon neon-text">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Image Captioning</h3>
+                    <p>
+                        Deep learning caption generation with
+                        <span class="highlight">CNN-RNN architecture</span>.
+                    </p>
+                    <div class="tech-grid">
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">RNN</span>
+                        <span class="tech-tag">TensorFlow</span>
+                    </div>
+                    <a href="https://github.com/prakhar175" target="_blank" class="project-link">
+                        <span>VIEW_PROJECT</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="project-card cyber-panel holographic tilt-3d">
+                    <div class="project-number">06</div>
+                    <div class="project-icon neon-text">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>PDF QA with AstraDB</h3>
+                    <p>
+                        Document Q&A system with <span class="highlight">LangChain & Groq</span>
+                        and vector similarity search.
+                    </p>
+                    <div class="tech-grid">
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Groq</span>
+                        <span class="tech-tag">AstraDB</span>
+                        <span class="tech-tag">Vector Search</span>
+                    </div>
+                    <a href="https://github.com/prakhar175" target="_blank" class="project-link">
+                        <span>VIEW_PROJECT</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card cyber-panel holographic tilt-3d">
+                    <div class="project-number">07</div>
+                    <div class="project-icon neon-text">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neural Style Transfer</h3>
+                    <p>
+                        Artistic image transformation using <span class="highlight">deep neural networks</span>
+                        with real-time style application and optimization.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Style Match</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">3s</span>
+                            <span class="metric-label">Processing Time</span>
+                        </div>
+                    </div>
+                    <div class="tech-grid">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Transfer Learning</span>
+                    </div>
+                    <a href="https://github.com/prakhar175" target="_blank" class="project-link">
+                        <span>VIEW_PROJECT</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="TECH_STACK.json">
+                <span class="title-number">[05]</span>
+                TECH_STACK<span class="title-ext">.json</span>
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="skills-grid">
+                <div class="skill-category cyber-panel holographic">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="tech-grid">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">C/C++</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category cyber-panel holographic">
+                    <h3><i class="fas fa-brain"></i> AI & ML</h3>
+                    <div class="tech-grid">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Keras</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Hugging Face</span>
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                </div>
+
+                <div class="skill-category cyber-panel holographic">
+                    <h3><i class="fas fa-robot"></i> Gen AI & LLMs</h3>
+                    <div class="tech-grid">
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">CrewAI</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Fine-tuning</span>
+                        <span class="tech-tag">LoRA</span>
+                        <span class="tech-tag">QLoRA</span>
+                    </div>
+                </div>
+
+                <div class="skill-category cyber-panel holographic">
+                    <h3><i class="fas fa-database"></i> Backend & DB</h3>
+                    <div class="tech-grid">
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Neo4j</span>
+                        <span class="tech-tag">Vector DBs</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="ACHIEVEMENTS.sys">
+                <span class="title-number">[06]</span>
+                ACHIEVEMENTS<span class="title-ext">.sys</span>
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="achievements-grid">
+                <div class="achievement-card cyber-panel holographic">
+                    <div class="achievement-badge neon-text">
+                        <span class="badge-rank">01</span>
+                        <span class="badge-suffix">ST</span>
+                    </div>
+                    <h3>WINNER</h3>
+                    <h4>Case-Based Hackathon</h4>
+                    <p>IIT Roorkee</p>
+                    <span class="year-badge">2025</span>
+                    <div class="achievement-glow"></div>
+                </div>
+
+                <div class="achievement-card cyber-panel holographic">
+                    <div class="achievement-badge neon-text">
+                        <span class="badge-rank">02</span>
+                        <span class="badge-suffix">ND</span>
+                    </div>
+                    <h3>RUNNER-UP</h3>
+                    <h4>AI Hackathon by NPCI</h4>
+                    <p>IIT Roorkee</p>
+                    <span class="year-badge">2025</span>
+                    <div class="achievement-glow"></div>
+                </div>
+
+                <div class="achievement-card cyber-panel holographic">
+                    <div class="achievement-badge neon-text">
+                        <span class="badge-rank">03</span>
+                        <span class="badge-suffix">RD</span>
+                    </div>
+                    <h3>THIRD PLACE</h3>
+                    <h4>National Hackathon</h4>
+                    <p>IIM Indore</p>
+                    <span class="year-badge">2025</span>
+                    <div class="achievement-glow"></div>
+                </div>
+
+                <div class="achievement-card cyber-panel holographic">
+                    <div class="achievement-badge neon-text">
+                        <span class="badge-rank">04</span>
+                        <span class="badge-suffix">TH</span>
+                    </div>
+                    <h3>FOURTH PLACE</h3>
+                    <h4>National Robotics</h4>
+                    <p>IIT Bombay (e-Yantra)</p>
+                    <span class="year-badge">2020</span>
+                    <div class="achievement-glow"></div>
+                </div>
+                <div class="achievement-card cyber-panel holographic">
+                    <div class="achievement-badge neon-text">
+                        <span class="badge-rank">05</span>
+                        <span class="badge-suffix">TH</span>
+                    </div>
+                    <h3>FINALIST (TOP 5)</h3>
+                    <h4>HACKATRON</h4>
+                    <p>IIIT GWALIOR</p>
+                    <span class="year-badge">2024</span>
+                    <div class="achievement-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title glitch" data-text="CONTACT.init">
+                <span class="title-number">[07]</span>
+                CONTACT<span class="title-ext">.init</span>
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="contact-grid">
+                <div class="contact-info cyber-panel holographic">
+                    <h3 class="neon-text">Let's Connect</h3>
+                    <p>
+                        Open to discussing new projects, research opportunities, or collaborations in AI/ML.
+                        Reach out through any channel below.
+                    </p>
+                    <div class="contact-items">
+                        <a href="mailto:prakhar.k2004@gmail.com" class="contact-item">
+                            <div class="item-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="item-content">
+                                <h4>EMAIL</h4>
+                                <p>prakhar.k2004@gmail.com</p>
+                            </div>
+                            <div class="item-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                        <a href="tel:+919414705425" class="contact-item">
+                            <div class="item-icon"><i class="fas fa-phone"></i></div>
+                            <div class="item-content">
+                                <h4>PHONE</h4>
+                                <p>(+91) 9414705425</p>
+                            </div>
+                            <div class="item-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                        <a href="https://github.com/prakhar175" target="_blank" class="contact-item">
+                            <div class="item-icon"><i class="fab fa-github"></i></div>
+                            <div class="item-content">
+                                <h4>GITHUB</h4>
+                                <p>@prakhar175</p>
+                            </div>
+                            <div class="item-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                        <a href="https://linkedin.com/in/prakharkothari175" target="_blank" class="contact-item">
+                            <div class="item-icon"><i class="fab fa-linkedin"></i></div>
+                            <div class="item-content">
+                                <h4>LINKEDIN</h4>
+                                <p>prakharkothari175</p>
+                            </div>
+                            <div class="item-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form cyber-panel holographic" id="contact-form">
+                    <div class="form-header">
+                        <span class="form-icon">▸</span>
+                        <span class="form-title">MESSAGE.send()</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">SUBJECT</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cyber-button primary full-width">
+                        <span class="button-content">
+                            <i class="fas fa-paper-plane"></i>
+                            SEND_MESSAGE
+                        </span>
+                        <div class="button-corners">
+                            <span class="corner tl"></span>
+                            <span class="corner tr"></span>
+                            <span class="corner bl"></span>
+                            <span class="corner br"></span>
+                        </div>
+                        <div class="button-glow"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>
+                    &copy; 2025 Prakhar Kothari //
+                    <span class="neon-text">CYBERPUNK_PORTFOLIO_v2.0.77</span> //
+                    All systems operational
+                </p>
+                <div class="footer-links">
+                    <a href="https://github.com/prakhar175" target="_blank" data-tooltip="GITHUB">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/prakharkothari175" target="_blank" data-tooltip="LINKEDIN">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/prakharkothari7" target="_blank" data-tooltip="TWITTER">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:prakhar.k2004@gmail.com" data-tooltip="EMAIL">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
